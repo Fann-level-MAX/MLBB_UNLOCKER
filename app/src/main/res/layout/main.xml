@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,7 +16,6 @@
             android:id="@+id/cre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
             android:text=""/>
 
         <TextView
@@ -23,6 +24,91 @@
             android:layout_height="wrap_content"
             android:text=""/>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/graphics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:text="Graphics"/>
+
+            <RadioButton
+                android:id="@+id/gLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low"/>
+
+            <RadioButton
+                android:id="@+id/gMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"/>
+
+            <RadioButton
+                android:id="@+id/gHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High"/>
+
+            <RadioButton
+                android:id="@+id/gUltra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ultra"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/fps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Frame Rates"/>
+
+            <RadioButton
+                android:id="@+id/fLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low"/>
+
+            <RadioButton
+                android:id="@+id/fMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"/>
+
+            <RadioButton
+                android:id="@+id/fSuper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Super"/>
+
+            <RadioButton
+                android:id="@+id/fUltra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ultra"/>
+        </RadioGroup>
     </LinearLayout>
 
 </RelativeLayout>
